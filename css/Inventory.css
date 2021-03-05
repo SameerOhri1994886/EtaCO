@@ -1,0 +1,57 @@
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 37%;
+}
+label {
+    font-family: cursive;
+    margin-left: 20%;
+   }
+#l{
+    font-family: cursive;
+    margin-left: 10%;
+}
+button{
+    margin-left: 10%;
+    font-family: cursive;
+    background-color: lightblue;
+    font-size: 20px;
+    width: 125px;
+}
+#Pid{
+    margin-left: 30px;
+    height: 20px;
+    width: 50px;
+}
+#Pname{
+    margin-left: 20px;
+    height: 20px;
+    width: 100px;
+}
+input[type=search]{
+    margin-left: 130px;
+    height: 25px;
+    font-family: cursive;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin-left: 22.5%;
+    margin-top: 5%;
+    font-family: cursive;
+}
+table th{
+    background-color: goldenrod;
+    font-family: cursive;
+}
+table td{
+    border:1px solid black;
+    font-family: cursive;
+    background-color: bisque;
+}
+
+
