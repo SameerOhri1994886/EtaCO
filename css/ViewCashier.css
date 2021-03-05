@@ -1,0 +1,31 @@
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 37%;
+}
+label {
+    font-family: cursive;
+    margin-left: 35%;
+}
+#Cname{
+    margin-left: 80px;
+    height: 20px;
+    font-family: cursive;
+    background-color: lightblue;
+    color: black;
+}
+#phone{
+        margin-left: 131.5px;
+        height: 20px;
+        font-family: cursive;
+        background-color: lightblue;
+        color: black;
+}
+input[type=email]{
+    margin-left: 130px;
+    height: 20px;
+    font-family: cursive;
+    background-color: lightblue;
+    color: black;
+}
