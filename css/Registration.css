@@ -1,0 +1,38 @@
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 37%;
+}
+label {
+    font-family: cursive;
+    margin-left: 35%;
+}
+#Fname{
+    margin-left: 80px;
+    height: 20px;
+    background-color: lightblue;
+}
+#Uname{
+        margin-left: 85px;
+        height: 20px;
+        background-color: lightblue;
+}
+input[type=email]{
+    margin-left: 110px;
+    height: 20px;
+    background-color: lightblue;
+}
+input[type=password]{
+    margin-left: 90px;
+    height: 20px;
+    background-color: lightblue;
+}
+button{
+        margin-left: 43%;
+        margin-top: 3%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: lightgreen;
+        font-family: cursive;
+    }
