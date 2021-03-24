@@ -1,0 +1,72 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+label{
+    font-family: cursive;
+}
+#ivn{
+   margin-left: 10%;
+   height: 25px;
+   width: 50px;
+}
+#date{
+   margin-left: 13%;
+   height: 25px;
+}
+#Cname{
+    margin-left: 4.5%;
+    height: 25px;
+}
+#transport{
+    margin-left: 10.5%;
+    height: 25px;
+}
+#address{
+    margin-left: 11.5%;
+    height: 75px;
+    width: 250px;
+}
+table{
+    text-align: center;
+    width: 50%;
+    margin-left: 17.5%;
+    margin-top: 1.5%;
+    border :5px grey;
+    border-collapse: collapse;
+    font-family: cursive;
+    }
+table th{
+    border: 2px solid black; 
+    background-color:goldenrod;
+    font-family: cursive;
+}
+table td {
+    border: 1px solid black; 
+    font-family: cursive;
+}
+.val{
+      text-align: center;
+  }
+button{
+      margin-left: 45%;
+      margin-top: 0.5%;
+      font-size: 20px;
+      text-align: center;
+      font-family: cursive;
+      background-color:lightgreen;
+      border-radius:10px;
+  }
+.b1{
+    margin-left: 43.6%;
+    margin-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    background-color:goldenrod;
+    border-radius:10px;
+  }
+  

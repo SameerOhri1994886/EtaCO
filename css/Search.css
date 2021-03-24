@@ -45,6 +45,12 @@
     font-family: cursive;
     text-align: center;
   }
+  #b1{
+    margin-top: 25px;
+    margin-left: 70px;
+    background-color: goldenrod;
+    font-family: cursive;
+  }
 
 .navbar {
     overflow: hidden;
