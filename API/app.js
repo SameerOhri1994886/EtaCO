@@ -2,82 +2,46 @@ const Joi= require('joi');
 const express =require('express');
 const app=express();
 app.use(express.json());
-const courses =[
-   {id:1,course:"course1"},
-   {id:2,course:"course2"},
-   {id:3,course:"course3"},
+const users =[
+   {FullName:"Sameer Ohri",Username:"samohri",Email:"sameerohri44@gmail.com",Password:"sameerohri"},
+   {FullName:"Anmol Preet",Username:"AnmolKannu",Email:"kanmol1729@gmail.com",Password:"anmolkannu1234"},
+   {FullName:"Robin Sharma",Username:"Roby",Email:"sharma.robin08@gmail.com",Password:"robinsharmarocks"},
+   {FullName:"Jagdeep Singh",Username:"Jaggi",Email:"Jagdeepsinghjp13@gmail.com",Password:"jagdeepsinghjp"},
 ]
-// app.get('/',(req,res)=>{
-//   res.send("Hello World!!!");
-//    });
-   //app.get('/api/courses',(req,res)=>{
-//       res.send([1,2,3]);
-   //      res.send(courses);
-  // });
-   app.get('/api/courses/:id',(req,res)=>{
-   res.send(req.params.id);
+   app.get('/api/users/:id',(req,res)=>{
+   res.send(req.params);
    });
-      app.put('/api/courses/:id',(req,res)=>{
-      const course=courses.find(c=>c.id===parseInt(req.params.id));
-         //res.send(req.params.id);
+      app.put('/api/users',(req,res)=>{
+      const user=users.find(c=>c===parseInt(req.params));
 
-      if(!course)
+      if(!user)
       {
-         res.status(404).send("Course not found...");
+         res.status(404).send("Incorrect Credentials...");
       }
-     // else{
-       //  res.send(course);
-      //}
-   //});
-   // app.get('/api/posts/:year/:month',(req,res)=>{
-   //    //res.send(req.params);
-   //      res.send(req.query);
-   // });
-
-   //app.post('/api/courses',(req,res)=>{
-
-      const schema={
+       const schema={
          name: Joi.string().min(3).required()
       };
-      //courses.push(schema);
-        //res.send(schema);
-      //const result=Joi.valid(req.body,schema);
-      const result=validateCourse(req.body);
-      // const{error}=validateCourse(req.body);
-      // if(error){
-      //    res.status(400).send("Invalid name of the course");
-      //    return;
-      // }
-      //console.log(result);
+       users.push(schema);
+       res.send(schema);
+       const result=Joi.valid(req.body,schema);
+       const result=validateUser(req.body);
       if(!req.body.name || req.body.name.length <3)
       {
-         res.status(400).send("Invalid Name of the Course");
+         res.status(400).send("Invalid Credentials...");
          return;
       }
 
-      course.name=req.body.name;
-      res.send(course);
+      user.FullName=req.body.FullName;
+      res.send(user);
    });
 
-   function validateCourse(course){
+   function validateUser(user){
     const schema={
-      name: Joi.string().min(3).required()
+      FullName: Joi.string().min(3).required()
      }
-     const result=Joi.valid(course,schema);
+     const result=Joi.valid(user,schema);
      return result;
    }
-
-     
-        const course={
-           id: courses.length+1,
-           name:req.body.name
-        };
-       
-        courses.push(course);
-        res.send(course);
-      
-        // });
-         
    const port=process.env.PORT || 2060
    app.listen(port,()=>console.log(`Start to listen at ${port}`));
 
